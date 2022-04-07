@@ -34,12 +34,11 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
             priority: '1',
             done: false
         }];
-        $scope.predicate = 'summary'; //defaul sort field
-        $scope.reverse = true; //sorting direction
+        $scope.predicate = 'summary';
+        $scope.reverse = true;
     }
 
     $scope.order = function(predicate) {
-        //sorting ToDos. predicate : summary, priority, dueDate
         $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
         $scope.predicate = predicate;
         $scope.saveToLocalStorage();
@@ -57,12 +56,10 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
         $scope.todoSummary = '';
         $scope.priority = '2';
         $scope.dueDate = new Date();
-        //save
         $scope.saveToLocalStorage();
     };
 
     $scope.remaining = function() {
-        //Remaining TODO count
         var count = 0;
         angular.forEach($scope.todos, function(todo) {
             count += todo.done ? 0 : 1;
@@ -71,7 +68,6 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
     };
 
     $scope.archive = function() {
-        //Remove DONE tasks from page and data
         $scope.endEditMode();
         var oldTodos = $scope.todos;
         $scope.todos = [];
@@ -82,10 +78,7 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
     };
 
     $scope.edit = function($event) {
-        if (this.todo.done) return;
-        //hide previous edited item
         $scope.endEditMode();
-        //show current clicked item for editing and put currently edited item to variable
         currentEditedIndex = $scope.todos.indexOf(this.todo);
         currentEdited = $event.currentTarget.parentElement;
         currentEdited.classList.add('editItem');
