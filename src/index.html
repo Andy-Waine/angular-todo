@@ -1,13 +1,45 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AngularTodo</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html ng-app="TodoApp">
+
+  <head>
+      <title>ToDo</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+      <script src="./assets/todo.js"></script>
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+      <div ng-controller="TodoCtrl" class="toDoContainer">
+          <!-- ADD TASK FIELD START-->
+          <div class="createTask">
+              <form ng-submit="addTodo()" class="form-inline createForm">
+                  <!-- ADD SUMMARY START-->
+                  <div class="form-group">
+                      <input type="text" class="form-control" ng-model="todoSummary" size="30" placeholder="New task" ng-click="endEditMode()">
+                  </div>
+                  <!-- ADD SUMMARY END-->
+                  <!-- ADD PRIORITY START-->
+                  <div class="form-group">
+                      <select class="form-control priority" name="priority" ng-model="priority" ng-click="endEditMode()">
+                          <option value="3">High</option>
+                          <option value="2">Medium</option>
+                          <option value="1">Low</option>
+                      </select>
+                  </div>
+                  <!-- ADD PRIORITY END-->
+                  <!-- ADD DUE DATE START-->
+                  <div class="form-group">
+                      <input class="form-control datepicker" type="date" name="dueDate" ng-model="dueDate" placeholder="yyyy-MM-dd" min="2022-04-08" max="2029-12-31" required/>
+                  </div>
+                  <!-- ADD DUE DATE END-->
+                  <!-- SUBMIT BTN -->
+                  <button class="btn btn-default" type="submit">add</button>
+                  <!-- SUBMIT BTN -->
+              </form>
+              <span class="tasksLeft">Todo {{remaining()}}/{{todos.length}} [<a href="" ng-click="archive()">clear done tasks</a>]</span>
+          </div>
+      </div>
+  </body>
 </html>
