@@ -89,3 +89,25 @@ span {
     margin: 0 auto;
 }
 
+.logout{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainContainer{
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+}
+
+.center {
+    display: flex;
+    justify-content:center
+}
+

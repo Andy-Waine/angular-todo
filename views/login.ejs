@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="/src/styles.css">
     <title>Login</title>
 </head>
 <body>
-    <h1>LOGIN</h1>
+    <div class="mainContainer">
+        <h1>LOGIN</h1>
+        <form action="/" method="POST">
+            <div class="center">
+                <input type="email" id="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div class="center">
+                <input type="password" id="password" name="password" placeholder="Password" required />
+            </div>
+            <div class="center">
+                <input type="submit" value="Login" />
+            </div>
+            <div class="center">
+                <a href="users/register">Register</a>
+            </div>
 
-    <form action="/" method="POST">
-        <div>
-            <input type="email" id="email" name="email" placeholder="E-mail" required />
-        </div>
-        <div>
-            <input type="password" id="password" name="password" placeholder="Password" required />
-        </div>
-        <div>
-            <input type="submit" value="Login" />
-        </div>
-        <a href="users/register">Register</a>
-
-        <ul>
-            <% if(messages.success_msg) { %>
-                <li><%= messages.success_msg %></li>
-            <% } %>
-        </ul>
-        <ul>
-        <% if(messages.error){ %>
-            <li><%= messages.error %></li>
-        <% }  %>
-        </ul>
-    </form>
+            <ul>
+                <% if(messages.success_msg) { %>
+                    <li><%= messages.success_msg %></li>
+                <% } %>
+            </ul>
+            <ul>
+            <% if(messages.error){ %>
+                <li><%= messages.error %></li>
+            <% }  %>
+            </ul>
+        </form>
+    </div>      
 </body>
 </html>
