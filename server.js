@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const { pool } = require("./dbConfig");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
@@ -16,8 +17,12 @@ const PORT = process.env.PORT || 4000;
 //CSS Rendering
 //app.use('/public', express.static('public'));
 
+//Serve JS & CSS
+app.use('/src', express.static(path.join(__dirname, 'src')))
+
+
 //Image Rendering
-//app.use('/images', express.static(path.join(__dirname, 'images')))
+app.use('/images', express.static(path.join(__dirname, 'images')))
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));

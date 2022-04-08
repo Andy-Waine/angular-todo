@@ -1,7 +1,7 @@
 var TodoApp = angular.module('TodoApp', ['ngStorage']);
 
 TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
-
+    console.log("To-Do Controller is Hooked Up")
     var currentEdited = false, 
         currentEditedIndex = null;
     $scope.priority = '2'; //2 = Medium
@@ -19,6 +19,7 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
         $scope.todos = $localStorage.todos;
         $scope.predicate = $localStorage.predicate;
         $scope.reverse = $localStorage.reverse;
+
     } else {
         //default state for example
         $scope.todos = [{
