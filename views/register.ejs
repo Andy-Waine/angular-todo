@@ -26,6 +26,14 @@
         <div>
             <input type="submit" value="Register" />
         </div>
+        <ul>
+            <% if(typeof errors != 'undefined') { %>
+                <% errors.forEach(error=>{ %>
+                    <li><%= error.message %></li>
+             <% }) %>
+
+         <% } %>
+        </ul>
         <a href="/">Already Registered? Login Here</a>
     </form>
 </body>
