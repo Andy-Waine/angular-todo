@@ -12,6 +12,13 @@ const initializePassport = require("./passportConfig");
 initializePassport(passport);
 
 const PORT = process.env.PORT || 4000;
+
+//CSS Rendering
+//app.use('/public', express.static('public'));
+
+//Image Rendering
+//app.use('/images', express.static(path.join(__dirname, 'images')))
+
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 
@@ -38,7 +45,7 @@ app.get('/users/register', (req, res) => {
 })
 
 app.get('/users/dashboard', (req, res) => {
-    res.render("dashboard", { user: req.user.name });
+    res.render("dashboard");
 })
 
 app.post('/users/register', async (req,res)=>{
