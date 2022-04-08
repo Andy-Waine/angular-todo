@@ -10,8 +10,7 @@
 - [Questions](#questions)
 
 ## Description
-<div>A Notetaking App Built in Angular using a PostgreSQL database on the Back-End for Encrypted Login Verification.</div>
-</br>
+<div>📜 A Notetaking App Built in Angular using a PostgreSQL database on the Back-End for Encrypted Login Verification.</div>
 
 ## Installation
 <ul>
