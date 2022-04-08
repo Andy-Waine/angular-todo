@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "ng build",
+    "build": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
