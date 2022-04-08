@@ -10,14 +10,16 @@
 - [Questions](#questions)
 
 ## Description
-<div align="center">A Notetaking App Built in Angular using a PostgreSQL database on the Back-End for Encrypted Login Verification.</div>
+<div>A Notetaking App Built in Angular using a PostgreSQL database on the Back-End for Encrypted Login Verification.</div>
 </br>
 
 ## Installation
-💾 Download this Repository's Code
-💾 Ensure that Node.js is installed and updated
-💾 Install all packages by running the following in your directory terminal: npm i
-💾 Run the app loclly bu following in your directory terminal: npm i
+<ul>
+  <li>💾 Download this Repository's Code</li>
+  <li>💾 Ensure that Node.js is installed and updated</li>
+  <li>💾 Install all packages by running the following in your directory terminal: npm i</li>
+  <li>💾 Run the app loclly bu following in your directory terminal: npm i</li>
+</ul>
 
 ## Contributing
 👪 Andy Waine
