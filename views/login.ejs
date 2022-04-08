@@ -21,6 +21,17 @@
             <input type="submit" value="Login" />
         </div>
         <a href="users/register">Register</a>
+
+        <ul>
+            <% if(messages.success_msg) { %>
+                <li><%= messages.success_msg %></li>
+            <% } %>
+        </ul>
+        <ul>
+        <% if(messages.error){ %>
+            <li><%= messages.error %></li>
+        <% }  %>
+        </ul>
     </form>
 </body>
 </html>
