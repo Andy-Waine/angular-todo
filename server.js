@@ -10,11 +10,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users/register', (req, res) => {
-    req.render("register");
+    res.render("register");
 })
 
 app.get('/users/dashboard', (req, res) => {
-    req.render("dashboard", { user: "andy" });
+    res.render("dashboard", { user: "andy" });
 })
 
 app.listen(PORT, () => {

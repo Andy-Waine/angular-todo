@@ -7,6 +7,9 @@ TodoApp.controller('TodoCtrl', function($scope, $localStorage) {
     $scope.priority = '2'; //2 = Medium
     $scope.dueDate = new Date();
 
+    //will be exported to server.js
+    var localArray = $localStorage.todos;
+
     //load user local storage
     if ($localStorage.todos) {
         //change format for dueDate field
