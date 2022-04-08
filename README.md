@@ -19,7 +19,7 @@
   <li>💾 Download this Repository's Code</li>
   <li>💾 Ensure that Node.js is installed and updated</li>
   <li>💾 Install all packages by running the following in your directory terminal: npm i</li>
-  <li>💾 Run the app loclly bu following in your directory terminal: npm i</li>
+  <li>💾 Run the app locally by running the following in your directory terminal: npm run dev</li>
 </ul>
 
 ## Contributing
