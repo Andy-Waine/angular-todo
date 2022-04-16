@@ -62,7 +62,24 @@ span {
 
 .createTask {
     background-color: rgba(128, 128, 128, 0.66);
-    padding: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.createForm {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0% !important;
+}
+
+.form-group {
+    padding-right: 20px;
+    padding-top: 4%;
 }
 
 .sortorder:after {
@@ -89,6 +106,10 @@ span {
     margin: 0 auto;
 }
 
+.add-btn {
+    margin-bottom: 0 !important;
+}
+
 .logout{
     display: flex;
     justify-content: center;
@@ -109,6 +130,10 @@ span {
 .center {
     display: flex;
     justify-content:center
+}
+
+.table {
+    margin-left: 2px;
 }
 
 .err-msg{
