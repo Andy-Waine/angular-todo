@@ -8,6 +8,8 @@
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [Technology](#technology)
+- [Backend](#backend)
 - [Contributing](#contributing)
 - [Questions](#questions)
 
@@ -21,6 +23,30 @@
   <li>💾 Install all packages by running the following in your directory terminal: npm i</li>
   <li>💾 Run the app locally by running the following in your directory terminal: npm run dev</li>
 </ul>
+
+## Technology
+
+- Express Js for REST APIs
+- bcryptjs for password encrytion
+- jsonwebtoken to token based authentication & authorization
+- Sequelize for database CRUD operations
+- PostgreSQL for data storage
+- Angular 13 
+- RxJS 6
+- Bootstrap 4
+
+## Backend
+
+These are APIs that Node.js Express App will export:
+| Methods |Urls|Actions|
+|----------------|-------------------------------|-----------------------------|
+|POST|/api/auth/signup |signup new account |
+|POST|/api/auth/signup |login an account |
+|GET|/api/user|retrieve all users|
+|GET|/api/user/:id|retrieve user by id|
+|GET|/api/items|retrieve all to-do items|
+|GET|/api/items/:id|retrieve to-do item by id|
+|DELETE|/api/items/:id|remove a to-do item by id|
 
 ## Contributing
 👪 Andy Waine
