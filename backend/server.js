@@ -11,21 +11,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = require("../backend/models");
 const Role = db.role;
-db.sequelize.sync();
-// db.sequelize.sync({ force: true }).then(() => {
-// 	console.log('Drop and re-sync db.');
-// 	initial();
-// });
-// function initial() {
-// 	Role.create({
-// 		id: 1,
-// 		name: 'user',
-// 	});
-// 	Role.create({
-// 		id: 3,
-// 		name: 'admin',
-// 	});
-// }
+//db.sequelize.sync();
+db.sequelize.sync({ force: true }).then(() => {
+	console.log('Drop and re-sync db.');
+	initial();
+});
+function initial() {
+	Role.create({
+		id: 1,
+		name: 'user',
+	});
+	Role.create({
+		id: 3,
+		name: 'admin',
+	});
+}
 require("../backend/routes/auth.routes")(app);
 require("../backend/routes/user.routes")(app);
 require("../backend/routes/item.routes")(app);
