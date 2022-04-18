@@ -29,18 +29,18 @@
 
 ## Technology
 
-- Express Js for REST APIs
-- bcryptjs for password encrytion
-- jsonwebtoken to token based authentication & authorization
-- Sequelize for database CRUD operations
-- PostgreSQL for data storage
-- Angular 13 
-- RxJS 6
-- Bootstrap 4
+- 🗜️ Express Js for REST APIs
+- 🗜️ bcryptjs for password encrytion
+- 🗜️ jsonwebtoken to token based authentication & authorization
+- 🗜️ Sequelize for database CRUD operations
+- 🗜️ PostgreSQL for data storage
+- 🗜️ Angular 13 
+- 🗜️ RxJS 6
+- 🗜️ Bootstrap 4
 
 ## Backend
 
-These are APIs that Node.js Express App will export:
+🔌 These are APIs that Node.js Express App will export:
 | Methods |Urls|Actions|
 |----------------|-------------------------------|-----------------------------|
 |POST|/api/auth/signup |signup new account |
