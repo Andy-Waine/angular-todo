@@ -18,10 +18,13 @@
 
 ## Installation
 <ul>
+  <li>💾 Ensure that Node.js is installed and running the latest version</li>
   <li>💾 Download this Repository's Code</li>
-  <li>💾 Ensure that Node.js is installed and updated</li>
-  <li>💾 Install all packages by running the following in your directory terminal: npm i</li>
-  <li>💾 Run the app locally by running the following in your directory terminal: npm run dev</li>
+  <li>💾 Extract the .zip folder and open the downloaded code in an editor of your choice (e.g. VSCode)</li>
+  <li>💾 Install all packages by running the following in your root directory's integrated terminal: npm i</li>
+  <li>💾 Open an integrated terminal for the BACKEND folder and run: node server.js</li>
+  <li>💾 Open an integrated terminal for the FRONTEND folder and run: ng serve</li>
+  <li>💾 Open your browser and navigate to localhost:4200</li>
 </ul>
 
 ## Technology
