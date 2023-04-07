@@ -1,8 +1,6 @@
 
 <h1 align="center">📝 Angular-ToDo 📝</h1>
 
-<h3 align="center">👉 Demonstration Video: https://vimeo.com/697521411 👈 </h3>
-
 ![image](https://user-images.githubusercontent.com/88730354/162493843-4533edf7-b802-4f44-996b-2203a4178235.png)
 
 ## Table of Contents
